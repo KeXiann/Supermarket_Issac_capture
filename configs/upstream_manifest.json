@@ -1,0 +1,56 @@
+{
+  "commit": "7e5fd9d0ae2f414249a3f2b83367dbb6d773f946",
+  "repository": "https://github.com/Kinetra-Humanoids/GPT6-Assist-Humanoid-Robot-Mobile-Manipulation-Data-Generation",
+  "files": [
+    {
+      "path": "configs/task1/init/state_mapping.json",
+      "sha256": "8803742aa9fb22f34e5eb1f950c7c31ae6cf655ade7537e3bd2aa1f2329d531c"
+    },
+    {
+      "path": "configs/task1/init/scene_manifest.json",
+      "sha256": "4ccbb3fd066c2738a0e1417887847a01ed69baf4a5d8b88418610d13ce4b6a74"
+    },
+    {
+      "path": "configs/task1/init/inspection.json",
+      "sha256": "321a42e0d574acae5688cd2629349970130f11895300da9ab8aa5a2d4bbb99c4"
+    },
+    {
+      "path": "configs/task1/init/camera_stereo.json",
+      "sha256": "45f9c8e9f5f991da09b630805c8211c17d89916aff4262f16e307b2f58bc11ce"
+    },
+    {
+      "path": "configs/task1/init/initial_scene.json",
+      "sha256": "754d1e48280df61ea5532f922c259197247eaa150e324dcd30b77acb56d6c694"
+    },
+    {
+      "path": "configs/task1/init/task.json",
+      "sha256": "41a18fdd9936680006f2992e61a608d4c12da77a911a1342eca696bbbb56ee2b"
+    },
+    {
+      "path": "configs/data_standard/meta/info.json",
+      "sha256": "36a23fdf7c4ab674120172582610b1f0756d16e0634798d3dd9d4817a4e03776"
+    },
+    {
+      "path": "configs/data_standard/meta/modality.json",
+      "sha256": "9212fec82259844ee58476ed3ed02f6d94bc7cc287c712bd41efc298741f9658"
+    },
+    {
+      "path": "configs/control/sonic/g1_revo2_model.json",
+      "sha256": "ddd29ff9a8241c812b8f77700af7409e93da8bde0d1caa3fe257a94ebf2c8352"
+    },
+    {
+      "path": "data/task1/init/initial_state.npz",
+      "sha256": "6c12134330db8c4338f8df65beaed144f8e8d5badd73782550ed287715395b6a"
+    },
+    {
+      "path": "data/task1/init/initial_proprio.npz",
+      "sha256": "195a3f659a83b6677918e09dc5942ecfce77057ebde8bd5983640c87124b056e"
+    },
+    {
+      "path": "configs/control/revo2_pd.json",
+      "sha256": "5a8df5b1ef22bcbda51c65a42494e536c1ec672639747199d0ee9269010de714",
+      "source_sha256": "b853aeb3632fa7a2854c5e35b0add5e31861719ccea32ac5e22f486abeef5394",
+      "local_resolution": "passive hand velocities resolved to canonical USD, per joint"
+    }
+  ]
+}

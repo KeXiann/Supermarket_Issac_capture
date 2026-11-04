@@ -1,0 +1,11 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.patch text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Preserve exact third-party hashes and patch context whitespace.
+assets/collection_reference_2609/** -whitespace
+licenses/** -whitespace
+patches/*.patch -whitespace

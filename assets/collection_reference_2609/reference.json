@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/jiachengliu3/GR00T-WholeBodyControl-2609",
+  "commit": "47a54c1522ffd52050895dcfe75e122a9dbf973b",
+  "files": [
+    "LICENSE",
+    "docs/BRAINCO_ZED_DATA_COLLECTION.md",
+    "docs/SEMANTICDPC_DATA_CONVERSION.md",
+    "gear_sonic/data/body_alignment.py",
+    "gear_sonic/data/brainco_collection.py",
+    "gear_sonic/data/exporter.py",
+    "gear_sonic/data/features_sonic_vla.py",
+    "gear_sonic/data/video_writer.py",
+    "gear_sonic/pyproject.toml",
+    "gear_sonic/scripts/process_dataset.py",
+    "gear_sonic/scripts/run_data_exporter.py",
+    "gear_sonic/tests/test_brainco_collection.py",
+    "gear_sonic/utils/teleop/brainco_poses.py",
+    "pyproject.toml",
+    "gear_sonic/utils/data_collection/transforms.py"
+  ],
+  "sha256": {
+    "LICENSE": "24ab66be50d1aca4fc5e029ef76ce4ceaac6557ea21665caf4b140695a76ffee",
+    "docs/BRAINCO_ZED_DATA_COLLECTION.md": "766d7df011f61bfbe946de590904b206295a01632a68c2e2c1d9b7f3f911858c",
+    "docs/SEMANTICDPC_DATA_CONVERSION.md": "c5e757929812872ca4101b6f8ad78a9ed74aba5c3a0934029a18403a5b68e3a0",
+    "gear_sonic/data/body_alignment.py": "4840a42dcdeeccea95d48525ce749da2d01fac1e0e927d48f4285d1fe7e8ce8b",
+    "gear_sonic/data/brainco_collection.py": "64de776907e7519ecbbae3f2e8af64db8accdc495dc8fa6183ec04bf8a594e0e",
+    "gear_sonic/data/exporter.py": "f94234bbae6e238e9ce7fcdd9fbda38032e120f56aba8f5c664e1fa850583af8",
+    "gear_sonic/data/features_sonic_vla.py": "16c82be34abbc4dace19485e0f806cd4022a182115e51062e05a54786447fd5a",
+    "gear_sonic/data/video_writer.py": "bac7fb4c105166cc3c81f20fcdba9732d95aafbbb72be7596eef59f7fee2656f",
+    "gear_sonic/scripts/process_dataset.py": "af9971ab4fd96e3821a3423974a406fdb8432e1b0b75f720c819ff4e3e5127cc",
+    "gear_sonic/scripts/run_data_exporter.py": "528191287977e126ed3b4293cc30a13f285d8dc3ddc4c2117e97b95f1cb964c9",
+    "gear_sonic/tests/test_brainco_collection.py": "5efbb861a5b233187c90a3f1341e0efde165a795a0a8e065b9f90d3f65874835",
+    "gear_sonic/utils/teleop/brainco_poses.py": "4a22706ce7f2a5762c87dc491303fb448091dc2699cb348bffaf0d8bb73dc1ef",
+    "pyproject.toml": "987169158c73b3affc52989409ac8416f6ef38ba0fa18cd9e5f7d44f3d2ed518",
+    "gear_sonic/pyproject.toml": "fd97430734c9fbfe67f6bb893989aa817b51af5efda294d43837a93fd9eb8b21",
+    "gear_sonic/utils/data_collection/transforms.py": "879e1b9dfbecad90cd61d925886e1e22f368ead531c6b7a96de373d02dbc179d"
+  },
+  "collection_profile": "BrainCo schema, body_alignment v2, monocular ego 640x360, 50Hz; local Revo2 adapter declares semantic differences",
+  "semanticdpc_conversion": {
+    "repository": "https://github.com/jiachengliu3/GR00T-WholeBodyControl-2609",
+    "contract_target_commit": "04eead325db1ae67f6a74b288fc0bbfbc13ff7fc",
+    "files_sha256": {
+      "gear_sonic/data/semanticdpc_conversion.py": "a95e2849676af807d9051bba25254b60f24b858f7c49e090da00c718df646a27",
+      "gear_sonic/data/semanticdpc_contract.json": "9c96d02bfb198dd5b2243ffef11164701d04a80ab456ed44b1b9dc597b08d8cd"
+    }
+  },
+  "dependency_sources": {
+    "lerobot_utils": {
+      "path": "dependencies/lerobot_utils.py",
+      "repository": "https://github.com/huggingface/lerobot",
+      "commit": "a445d9c9da6bea99a8972daa4fe1fdd053d711d2",
+      "sha256": "ecb63a1d84610f36dda78047058ef2e8c7b840544fef262baad7ccc2142ad031"
+    },
+    "datasets_version": "3.6.0"
+  }
+}

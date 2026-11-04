@@ -1,0 +1,199 @@
+{
+  "state": {
+    "left_leg": {
+      "start": 0,
+      "end": 6
+    },
+    "right_leg": {
+      "start": 6,
+      "end": 12
+    },
+    "waist": {
+      "start": 12,
+      "end": 15
+    },
+    "left_arm": {
+      "start": 15,
+      "end": 22
+    },
+    "left_hand": {
+      "start": 0,
+      "end": 6,
+      "original_key": "observation.hand_joint_position"
+    },
+    "right_arm": {
+      "start": 22,
+      "end": 29
+    },
+    "right_hand": {
+      "start": 6,
+      "end": 12,
+      "original_key": "observation.hand_joint_position"
+    },
+    "left_wrist_pos": {
+      "start": 0,
+      "end": 3,
+      "original_key": "observation.eef_state"
+    },
+    "left_wrist_abs_quat": {
+      "start": 3,
+      "end": 7,
+      "original_key": "observation.eef_state",
+      "rotation_type": "quaternion"
+    },
+    "right_wrist_pos": {
+      "start": 7,
+      "end": 10,
+      "original_key": "observation.eef_state"
+    },
+    "right_wrist_abs_quat": {
+      "start": 10,
+      "end": 14,
+      "original_key": "observation.eef_state",
+      "rotation_type": "quaternion"
+    },
+    "root_orientation": {
+      "start": 0,
+      "end": 4,
+      "original_key": "observation.root_orientation",
+      "rotation_type": "quaternion"
+    },
+    "projected_gravity": {
+      "start": 0,
+      "end": 3,
+      "original_key": "observation.projected_gravity"
+    },
+    "cpp_rotation_offset": {
+      "start": 0,
+      "end": 4,
+      "original_key": "observation.cpp_rotation_offset",
+      "rotation_type": "quaternion"
+    },
+    "init_base_quat": {
+      "start": 0,
+      "end": 4,
+      "original_key": "observation.init_base_quat",
+      "rotation_type": "quaternion"
+    },
+    "hand_binary_state": {
+      "start": 0,
+      "end": 2,
+      "original_key": "observation.hand_binary_state"
+    }
+  },
+  "action": {
+    "delta_heading": {
+      "start": 0,
+      "end": 1,
+      "original_key": "teleop.delta_heading"
+    },
+    "motion_token": {
+      "start": 0,
+      "end": 64,
+      "original_key": "action.motion_token"
+    },
+    "smpl_joints": {
+      "start": 0,
+      "end": 72,
+      "original_key": "teleop.smpl_joints"
+    },
+    "smpl_pose": {
+      "start": 0,
+      "end": 63,
+      "original_key": "teleop.smpl_pose"
+    },
+    "body_quat_w": {
+      "start": 0,
+      "end": 4,
+      "original_key": "teleop.body_quat_w",
+      "rotation_type": "quaternion"
+    },
+    "target_body_orientation": {
+      "start": 0,
+      "end": 6,
+      "original_key": "teleop.target_body_orientation",
+      "rotation_type": "rotation_6d"
+    },
+    "left_hand_joints": {
+      "start": 0,
+      "end": 6,
+      "original_key": "teleop.left_hand_joints"
+    },
+    "right_hand_joints": {
+      "start": 0,
+      "end": 6,
+      "original_key": "teleop.right_hand_joints"
+    },
+    "left_wrist_joints": {
+      "start": 0,
+      "end": 3,
+      "original_key": "teleop.left_wrist_joints"
+    },
+    "right_wrist_joints": {
+      "start": 0,
+      "end": 3,
+      "original_key": "teleop.right_wrist_joints"
+    },
+    "stream_mode": {
+      "start": 0,
+      "end": 1,
+      "original_key": "teleop.stream_mode"
+    },
+    "planner_mode": {
+      "start": 0,
+      "end": 1,
+      "original_key": "teleop.planner_mode"
+    },
+    "planner_movement": {
+      "start": 0,
+      "end": 3,
+      "original_key": "teleop.planner_movement"
+    },
+    "planner_facing": {
+      "start": 0,
+      "end": 3,
+      "original_key": "teleop.planner_facing"
+    },
+    "planner_speed": {
+      "start": 0,
+      "end": 1,
+      "original_key": "teleop.planner_speed"
+    },
+    "planner_height": {
+      "start": 0,
+      "end": 1,
+      "original_key": "teleop.planner_height"
+    },
+    "vr_3pt_position": {
+      "start": 0,
+      "end": 9,
+      "original_key": "teleop.vr_3pt_position"
+    },
+    "vr_3pt_orientation": {
+      "start": 0,
+      "end": 18,
+      "original_key": "teleop.vr_3pt_orientation",
+      "rotation_type": "rotation_6d"
+    },
+    "hand_binary": {
+      "start": 0,
+      "end": 2,
+      "original_key": "action.hand_binary"
+    },
+    "hand_joint_position": {
+      "start": 0,
+      "end": 12,
+      "original_key": "action.hand_joint_position"
+    }
+  },
+  "video": {
+    "ego_view": {
+      "original_key": "observation.images.ego_view"
+    }
+  },
+  "annotation": {
+    "human.task_description": {
+      "original_key": "task_index"
+    }
+  }
+}

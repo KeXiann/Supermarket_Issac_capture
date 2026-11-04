@@ -1,0 +1,23 @@
+Supermarket_Issac_capture
+Copyright 2026 Yu Kexian and contributors.
+
+Original bridge/integration code is distributed under Apache-2.0.
+This project is not an official NVIDIA, Unitree, PICO, or Kinetra product.
+
+patches/sonic-capture.patch modifies NVIDIA GR00T-WholeBodyControl source
+(Apache-2.0). It adds simulation startup/history initialization, measured-state
+logging, recording controls, Revo2 hand mapping, and orderly simulation stop.
+The patch is based on commit 7f151314d4d1606544bf249d2a7a1cb754c64582.
+NVIDIA's original copyright and license are retained in
+licenses/NVIDIA-SONIC-LICENSE. Its model-weight license is separate; no model
+weights are redistributed here.
+
+assets/collection_reference_2609 contains a small source/schema compatibility
+snapshot, including NVIDIA-derived source and Hugging Face LeRobot utilities.
+Original notices remain in the files and its LICENSE; reference.json records
+repositories, revisions and hashes. This directory is not a model or dataset.
+
+Robot models, supermarket scenes, textures, motion data, initial-state arrays,
+Isaac Sim/Lab, XRoboToolkit and SONIC weights are downloaded or installed
+separately and remain subject to their respective terms. This project's
+Apache-2.0 license does not relicense these external resources.

@@ -1,0 +1,17 @@
+name: Lightweight checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'numpy==1.26.4'
+      - run: python scripts/test_core.py
+      - run: python -m compileall -q bridge scripts tests
+      - run: for script in capture.sh setup.sh scripts/*.sh; do bash -n "$script"; done
+      - run: python scripts/check_release.py

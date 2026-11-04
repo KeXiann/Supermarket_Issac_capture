@@ -1,0 +1,45 @@
+{
+  "schema": "revo2_pd/v1",
+  "source": "scripts/physics/core/brainco_adapter.py",
+  "active": {
+    "stiffness": 4.0,
+    "damping": 0.12,
+    "armature": 0.0002,
+    "effort_and_velocity_limits": "assets/robot/urdf/revo2_{side}_clean.urdf"
+  },
+  "passive_mimic": {
+    "stiffness": 0.0,
+    "damping": 0.0,
+    "armature": 0.0002,
+    "effort_limit": 0.0,
+    "velocity_limit_by_joint_rad_s": {
+      "left_thumb_distal_joint": 2.5302999780368203,
+      "left_index_distal_joint": 2.268500057605453,
+      "left_middle_distal_joint": 2.268500057605453,
+      "left_ring_distal_joint": 2.268500057605453,
+      "left_pinky_distal_joint": 2.268500057605453,
+      "right_thumb_distal_joint": 2.5302999780368203,
+      "right_index_distal_joint": 2.268500057605453,
+      "right_middle_distal_joint": 2.268500057605453,
+      "right_ring_distal_joint": 2.268500057605453,
+      "right_pinky_distal_joint": 2.268500057605453
+    }
+  },
+  "runtime_adjustments": {
+    "active_damping_factor_env": "G1_HAND_DAMPING_FACTOR",
+    "right_non_thumb_stiffness_factor_env": "G1_RIGHT_FINGER_STIFFNESS_FACTOR"
+  },
+  "units": {
+    "stiffness": "N m/rad",
+    "damping": "N m s/rad",
+    "armature": "kg m2",
+    "effort_limit": "N m",
+    "velocity_limit": "rad/s"
+  },
+  "local_resolution": {
+    "authority": "canonical upstream USD and initialization builder",
+    "source_json_sha256": "b853aeb3632fa7a2854c5e35b0add5e31861719ccea32ac5e22f486abeef5394",
+    "source_json_velocity_limit_rad_s": 4.0,
+    "reason": "Resolve source JSON/USD contradiction by naming exact per-joint USD limits; no change to source assets."
+  }
+}

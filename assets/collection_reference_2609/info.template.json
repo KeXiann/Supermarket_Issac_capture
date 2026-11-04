@@ -1,0 +1,919 @@
+{
+  "codebase_version": "v2.1",
+  "fps": 50,
+  "chunks_size": 1000,
+  "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+  "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+  "features": {
+    "observation.images.ego_view": {
+      "dtype": "video",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ]
+    },
+    "observation.state": {
+      "dtype": "float64",
+      "shape": [
+        29
+      ],
+      "names": [
+        "left_hip_pitch_joint",
+        "left_hip_roll_joint",
+        "left_hip_yaw_joint",
+        "left_knee_joint",
+        "left_ankle_pitch_joint",
+        "left_ankle_roll_joint",
+        "right_hip_pitch_joint",
+        "right_hip_roll_joint",
+        "right_hip_yaw_joint",
+        "right_knee_joint",
+        "right_ankle_pitch_joint",
+        "right_ankle_roll_joint",
+        "waist_yaw_joint",
+        "waist_roll_joint",
+        "waist_pitch_joint",
+        "left_shoulder_pitch_joint",
+        "left_shoulder_roll_joint",
+        "left_shoulder_yaw_joint",
+        "left_elbow_joint",
+        "left_wrist_roll_joint",
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_shoulder_pitch_joint",
+        "right_shoulder_roll_joint",
+        "right_shoulder_yaw_joint",
+        "right_elbow_joint",
+        "right_wrist_roll_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ]
+    },
+    "observation.eef_state": {
+      "dtype": "float64",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_wrist_pos",
+        "left_wrist_abs_quat",
+        "right_wrist_pos",
+        "right_wrist_abs_quat"
+      ]
+    },
+    "action.wbc": {
+      "dtype": "float64",
+      "shape": [
+        29
+      ],
+      "names": [
+        "left_hip_pitch_joint",
+        "left_hip_roll_joint",
+        "left_hip_yaw_joint",
+        "left_knee_joint",
+        "left_ankle_pitch_joint",
+        "left_ankle_roll_joint",
+        "right_hip_pitch_joint",
+        "right_hip_roll_joint",
+        "right_hip_yaw_joint",
+        "right_knee_joint",
+        "right_ankle_pitch_joint",
+        "right_ankle_roll_joint",
+        "waist_yaw_joint",
+        "waist_roll_joint",
+        "waist_pitch_joint",
+        "left_shoulder_pitch_joint",
+        "left_shoulder_roll_joint",
+        "left_shoulder_yaw_joint",
+        "left_elbow_joint",
+        "left_wrist_roll_joint",
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_shoulder_pitch_joint",
+        "right_shoulder_roll_joint",
+        "right_shoulder_yaw_joint",
+        "right_elbow_joint",
+        "right_wrist_roll_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ]
+    },
+    "observation.root_orientation": {
+      "dtype": "float64",
+      "shape": [
+        4
+      ],
+      "names": [
+        "base_qw",
+        "base_qx",
+        "base_qy",
+        "base_qz"
+      ]
+    },
+    "observation.projected_gravity": {
+      "dtype": "float64",
+      "shape": [
+        3
+      ],
+      "names": [
+        "gravity_x",
+        "gravity_y",
+        "gravity_z"
+      ]
+    },
+    "observation.cpp_rotation_offset": {
+      "dtype": "float64",
+      "shape": [
+        4
+      ],
+      "names": [
+        "rot_offset_qw",
+        "rot_offset_qx",
+        "rot_offset_qy",
+        "rot_offset_qz"
+      ]
+    },
+    "observation.init_base_quat": {
+      "dtype": "float64",
+      "shape": [
+        4
+      ],
+      "names": [
+        "init_base_qw",
+        "init_base_qx",
+        "init_base_qy",
+        "init_base_qz"
+      ]
+    },
+    "teleop.delta_heading": {
+      "dtype": "float64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "delta_heading"
+      ]
+    },
+    "action.motion_token": {
+      "dtype": "float64",
+      "shape": [
+        64
+      ],
+      "names": "motion_token"
+    },
+    "teleop.smpl_joints": {
+      "dtype": "float32",
+      "shape": [
+        72
+      ],
+      "names": "smpl_joints"
+    },
+    "teleop.smpl_pose": {
+      "dtype": "float32",
+      "shape": [
+        63
+      ],
+      "names": "smpl_pose"
+    },
+    "teleop.body_quat_w": {
+      "dtype": "float32",
+      "shape": [
+        4
+      ],
+      "names": "body_quat_w"
+    },
+    "teleop.target_body_orientation": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "target_body_r00",
+        "target_body_r10",
+        "target_body_r01",
+        "target_body_r11",
+        "target_body_r02",
+        "target_body_r12"
+      ]
+    },
+    "teleop.left_hand_joints": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5"
+      ]
+    },
+    "teleop.right_hand_joints": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "teleop.smpl_frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "smpl_frame_index"
+      ]
+    },
+    "teleop.left_wrist_joints": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "names": [
+        "left_wrist_roll",
+        "left_wrist_pitch",
+        "left_wrist_yaw"
+      ]
+    },
+    "teleop.right_wrist_joints": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "names": [
+        "right_wrist_roll",
+        "right_wrist_pitch",
+        "right_wrist_yaw"
+      ]
+    },
+    "teleop.stream_mode": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "stream_mode"
+      ]
+    },
+    "teleop.planner_mode": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "locomotion_mode"
+      ]
+    },
+    "teleop.planner_movement": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "names": [
+        "movement_x",
+        "movement_y",
+        "movement_z"
+      ]
+    },
+    "teleop.planner_facing": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "names": [
+        "facing_x",
+        "facing_y",
+        "facing_z"
+      ]
+    },
+    "teleop.planner_speed": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "speed"
+      ]
+    },
+    "teleop.planner_height": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "height"
+      ]
+    },
+    "teleop.vr_3pt_position": {
+      "dtype": "float32",
+      "shape": [
+        9
+      ],
+      "names": [
+        "lwrist_x",
+        "lwrist_y",
+        "lwrist_z",
+        "rwrist_x",
+        "rwrist_y",
+        "rwrist_z",
+        "neck_x",
+        "neck_y",
+        "neck_z"
+      ]
+    },
+    "teleop.vr_3pt_orientation": {
+      "dtype": "float32",
+      "shape": [
+        18
+      ],
+      "names": [
+        "lwrist_r00",
+        "lwrist_r10",
+        "lwrist_r01",
+        "lwrist_r11",
+        "lwrist_r02",
+        "lwrist_r12",
+        "rwrist_r00",
+        "rwrist_r10",
+        "rwrist_r01",
+        "rwrist_r11",
+        "rwrist_r02",
+        "rwrist_r12",
+        "neck_r00",
+        "neck_r10",
+        "neck_r01",
+        "neck_r11",
+        "neck_r02",
+        "neck_r12"
+      ]
+    },
+    "observation.control_cycle_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "control_cycle_index"
+      ]
+    },
+    "observation.body_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_timestamp_ns"
+      ]
+    },
+    "observation.body_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_monotonic_ns"
+      ]
+    },
+    "action.body_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_monotonic_ns"
+      ]
+    },
+    "observation.lowstate_receive_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "lowstate_receive_monotonic_ns"
+      ]
+    },
+    "observation.lowstate_tick": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "lowstate_tick"
+      ]
+    },
+    "observation.previous_body_action_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "previous_body_action_index"
+      ]
+    },
+    "observation.previous_body_action_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "previous_body_action_monotonic_ns"
+      ]
+    },
+    "observation.body_source_age_s": {
+      "dtype": "float64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_source_age_s"
+      ]
+    },
+    "observation.body_capture_age_s": {
+      "dtype": "float64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_capture_age_s"
+      ]
+    },
+    "observation.body_valid": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "body_valid"
+      ]
+    },
+    "observation.previous_body_action_valid": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "previous_body_action_valid"
+      ]
+    },
+    "observation.joint_velocity": {
+      "dtype": "float64",
+      "shape": [
+        29
+      ],
+      "names": [
+        "left_hip_pitch_joint",
+        "left_hip_roll_joint",
+        "left_hip_yaw_joint",
+        "left_knee_joint",
+        "left_ankle_pitch_joint",
+        "left_ankle_roll_joint",
+        "right_hip_pitch_joint",
+        "right_hip_roll_joint",
+        "right_hip_yaw_joint",
+        "right_knee_joint",
+        "right_ankle_pitch_joint",
+        "right_ankle_roll_joint",
+        "waist_yaw_joint",
+        "waist_roll_joint",
+        "waist_pitch_joint",
+        "left_shoulder_pitch_joint",
+        "left_shoulder_roll_joint",
+        "left_shoulder_yaw_joint",
+        "left_elbow_joint",
+        "left_wrist_roll_joint",
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_shoulder_pitch_joint",
+        "right_shoulder_roll_joint",
+        "right_shoulder_yaw_joint",
+        "right_elbow_joint",
+        "right_wrist_roll_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ]
+    },
+    "observation.previous_body_action": {
+      "dtype": "float64",
+      "shape": [
+        29
+      ],
+      "names": [
+        "left_hip_pitch_joint",
+        "left_hip_roll_joint",
+        "left_hip_yaw_joint",
+        "left_knee_joint",
+        "left_ankle_pitch_joint",
+        "left_ankle_roll_joint",
+        "right_hip_pitch_joint",
+        "right_hip_roll_joint",
+        "right_hip_yaw_joint",
+        "right_knee_joint",
+        "right_ankle_pitch_joint",
+        "right_ankle_roll_joint",
+        "waist_yaw_joint",
+        "waist_roll_joint",
+        "waist_pitch_joint",
+        "left_shoulder_pitch_joint",
+        "left_shoulder_roll_joint",
+        "left_shoulder_yaw_joint",
+        "left_elbow_joint",
+        "left_wrist_roll_joint",
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_shoulder_pitch_joint",
+        "right_shoulder_roll_joint",
+        "right_shoulder_yaw_joint",
+        "right_elbow_joint",
+        "right_wrist_roll_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ]
+    },
+    "observation.base_angular_velocity": {
+      "dtype": "float64",
+      "shape": [
+        3
+      ],
+      "names": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "observation.base_acceleration": {
+      "dtype": "float64",
+      "shape": [
+        3
+      ],
+      "names": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "observation.hand_joint_position": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5",
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "observation.hand_joint_velocity": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5",
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "observation.hand_binary_state": {
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "observation.hand_valid": {
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "observation.hand_received_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "observation.hand_age_s": {
+      "dtype": "float64",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "action.hand_joint_position": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5",
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "action.hand_binary": {
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "action.hand_valid": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "command_valid"
+      ]
+    },
+    "action.hand_enabled": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "command_sent_this_update"
+      ]
+    },
+    "action.hand_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "last_successful_dds_write"
+      ]
+    },
+    "teleop.hand_pico_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "last_command_pico_input"
+      ]
+    },
+    "observation.capture_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "workstation_sample_time"
+      ]
+    },
+    "observation.camera_timestamp": {
+      "dtype": "float64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "robot_camera_time_s"
+      ]
+    },
+    "observation.previous_hand_action": {
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "observation.previous_hand_action_joint_position": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5",
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "observation.previous_hand_action_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "monotonic_ns"
+      ]
+    },
+    "observation.previous_hand_action_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "timestamp_ns"
+      ]
+    },
+    "observation.previous_hand_action_sequence": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "sequence"
+      ]
+    },
+    "observation.previous_hand_action_session_id": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "session_id"
+      ]
+    },
+    "observation.previous_hand_action_valid": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "valid"
+      ]
+    },
+    "action.aligned_hand": {
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "names": [
+        "left",
+        "right"
+      ]
+    },
+    "action.aligned_hand_joint_position": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "left_brainco_motor_0",
+        "left_brainco_motor_1",
+        "left_brainco_motor_2",
+        "left_brainco_motor_3",
+        "left_brainco_motor_4",
+        "left_brainco_motor_5",
+        "right_brainco_motor_0",
+        "right_brainco_motor_1",
+        "right_brainco_motor_2",
+        "right_brainco_motor_3",
+        "right_brainco_motor_4",
+        "right_brainco_motor_5"
+      ]
+    },
+    "action.aligned_hand_monotonic_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "monotonic_ns"
+      ]
+    },
+    "action.aligned_hand_timestamp_ns": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "timestamp_ns"
+      ]
+    },
+    "action.aligned_hand_sequence": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "sequence"
+      ]
+    },
+    "action.aligned_hand_session_id": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": [
+        "session_id"
+      ]
+    },
+    "action.aligned_hand_valid": {
+      "dtype": "int32",
+      "shape": [
+        1
+      ],
+      "names": [
+        "valid"
+      ]
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  }
+}

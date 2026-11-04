@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "profile": "kinetra_zed_mini_torso_7e5fd9d",
+  "parent_frame": "torso_link",
+  "rotation_follow": "rigid_parent",
+  "status": "estimated_not_calibrated",
+  "calibrated": false,
+  "do_not_use_as_ground_truth_hand_eye_calibration": true,
+  "T_parent_camera_cv": [
+    [
+      7.265552265021406e-05,
+      -0.6574588474854463,
+      0.7534904502276626,
+      0.10292323492068217
+    ],
+    [
+      -0.9999999946959554,
+      -0.00010277420216465892,
+      6.749539767735156e-06,
+      0.022820609792258507
+    ],
+    [
+      7.30018352240858e-05,
+      -0.7534904467215078,
+      -0.6574588514653656,
+      0.40395833708452433
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_m": [
+    0.10292323492068217,
+    0.022820609792258507,
+    0.40395833708452433
+  ],
+  "pitch_down_deg": 41.10635710810979,
+  "baseline_m": 0.06555722207234115,
+  "source": {
+    "repository": "https://github.com/Kinetra-Humanoids/GPT6-Assist-Humanoid-Robot-Mobile-Manipulation-Data-Generation",
+    "commit": "7e5fd9d0ae2f414249a3f2b83367dbb6d773f946",
+    "snapshot_path": "assets/upstream/7e5fd9d0ae2f/configs/collection/camera_stereo.json",
+    "sha256": "45f9c8e9f5f991da09b630805c8211c17d89916aff4262f16e307b2f58bc11ce"
+  },
+  "upstream_status": "Approximate torso optical pose from STEP screw axes and STL bracket mating geometry; frontal photograph orientation; not calibrated torso extrinsics"
+}

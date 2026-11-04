@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/Kinetra-Humanoids/GPT6-Assist-Humanoid-Robot-Mobile-Manipulation-Data-Generation",
+  "commit": "7e5fd9d0ae2f414249a3f2b83367dbb6d773f946",
+  "files": [
+    {
+      "path": "assets/upstream/7e5fd9d0ae2f/configs/collection/camera_stereo.json",
+      "sha256": "45f9c8e9f5f991da09b630805c8211c17d89916aff4262f16e307b2f58bc11ce"
+    },
+    {
+      "path": "assets/upstream/7e5fd9d0ae2f/configs/collection/render_config.json",
+      "sha256": "0e489ad3d6731cb61a3b9ae19ffb1ff89f8a597a5912bd522945269c4a7fdd00"
+    },
+    {
+      "path": "assets/upstream/7e5fd9d0ae2f/configs/task1/init/initial_scene.json",
+      "sha256": "754d1e48280df61ea5532f922c259197247eaa150e324dcd30b77acb56d6c694"
+    }
+  ]
+}

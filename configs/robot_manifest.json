@@ -1,0 +1,141 @@
+{
+  "repository": "https://github.com/Kinetra-Humanoids/GPT6-Assist-Humanoid-Robot-Mobile-Manipulation-Data-Generation",
+  "commit": "7e5fd9d0ae2f414249a3f2b83367dbb6d773f946",
+  "files": [
+    {
+      "path": "assets/robot/README.md",
+      "sha256": "04de124fa01626b1362aca3fa8eed6e73b927d917e3f5890d463a2ea37134ee4",
+      "size": 2533
+    },
+    {
+      "path": "assets/robot/README.zh-CN.md",
+      "sha256": "a1c547c4ab42d56d122f898e068a62587ace802d76d169c6b7d0012b7baa107a",
+      "size": 2270
+    },
+    {
+      "path": "assets/robot/body/g1.physics.usda",
+      "sha256": "7b1df11173f47f9e16f339d5f0bcf2eebe69f839ff830e9b0eaf0fe469396444",
+      "size": 31315
+    },
+    {
+      "path": "assets/robot/body/g1.usda",
+      "sha256": "38eb6bdabae71e248a6d48e05851245919279d2988fcf3ab5b0193255e72f4c5",
+      "size": 248
+    },
+    {
+      "path": "assets/robot/body/g1_equipped.json",
+      "sha256": "1846e2a5d9965ab2045a8098f9e177ffb2f94c6f0cf79306af1fc39adaf31035",
+      "size": 8866
+    },
+    {
+      "path": "assets/robot/body/g1_equipped.usdc",
+      "sha256": "0b81b126546cf4e843d4d3232b5e75e6b579111336a4f57d2ea0e01b055a69ac",
+      "size": 72468945
+    },
+    {
+      "path": "assets/robot/body/g1_measured_source.usda",
+      "sha256": "932297e36ce6d1b1e9049cc549297fbe55b86af0046409d206c1a13e30b6cd61",
+      "size": 71279160
+    },
+    {
+      "path": "assets/robot/g1_revo2/g1_revo2.physics.usda",
+      "sha256": "ba36a6e88fe59bb0e27039564d0d2bfd0164b6955111edd1dd2bcef8e64ee270",
+      "size": 59367
+    },
+    {
+      "path": "assets/robot/g1_revo2/g1_revo2.usda",
+      "sha256": "b5ccb9e65ba399780795e9391893e499b4b251568ed8eed7e3712d92615b964d",
+      "size": 211
+    },
+    {
+      "path": "assets/robot/hands/revo2_left.physics.usda",
+      "sha256": "14eb00e3d2fd6688ce2f7da1a2b3c916595435a8bcb10755ad21d44020ef2e4f",
+      "size": 12084
+    },
+    {
+      "path": "assets/robot/hands/revo2_left.usda",
+      "sha256": "039a8ebb9f877c51a6326bc39bfc88c00253d1321a5958993c30bafaf341f6ae",
+      "size": 205
+    },
+    {
+      "path": "assets/robot/hands/revo2_left_measured_source.usda",
+      "sha256": "444ea749d01264e7089eac234425d221c1d1079454653bfd8288d29511e9ec83",
+      "size": 82203864
+    },
+    {
+      "path": "assets/robot/hands/revo2_right.physics.usda",
+      "sha256": "aecd73ef6d8b46bdb1454929a4acffa748d644dfed26580a5642c9308293c7a9",
+      "size": 12163
+    },
+    {
+      "path": "assets/robot/hands/revo2_right.usda",
+      "sha256": "acb6ceb80c17e1d5f40879b938e808064340117130b2cacd6048e8cb87543113",
+      "size": 207
+    },
+    {
+      "path": "assets/robot/hands/revo2_right_measured_source.usda",
+      "sha256": "8fbc831dc261edfadc6fb7e8196f4f957d79e02cf1fa0bb337d8ba1d10196eec",
+      "size": 81940186
+    },
+    {
+      "path": "assets/robot/sonic/model/g1_29dof.urdf",
+      "sha256": "ca9feaa943a7834e25a5bf642e5573deaf7ec0cdb9b03df78a124cf87f52cd46",
+      "size": 32021
+    },
+    {
+      "path": "assets/robot/sonic/model/g1_29dof.xml",
+      "sha256": "4d6a8e151db173dac39d77463e0fa44640e2003ff49ccf9d00f6e53c28a97e11",
+      "size": 26826
+    },
+    {
+      "path": "assets/robot/sonic/model/scene.xml",
+      "sha256": "aef77a14fe5f4de569720d32c73cfac707f565fd999c514bd933285d473851c3",
+      "size": 1028
+    },
+    {
+      "path": "assets/robot/textures/974dd7b16599601a_revo2_photo.jpg",
+      "sha256": "974dd7b16599601aba12af54ced269c9ba4e532d5d6a9e4d35dcc1ce6d392098",
+      "size": 56794
+    },
+    {
+      "path": "assets/robot/urdf/revo2_left_clean.urdf",
+      "sha256": "0ef84b649f0108d8d984d8caf7211e4c1e878ccacdf214f22c2512590de782b1",
+      "size": 23998
+    },
+    {
+      "path": "assets/robot/urdf/revo2_right_clean.urdf",
+      "sha256": "87a28d6e9869bd086be44adf98921bce97fb101012b035d154c243ee6e0d6c39",
+      "size": 23952
+    },
+    {
+      "path": "configs/control/sonic/g1_revo2_model.json",
+      "sha256": "ddd29ff9a8241c812b8f77700af7409e93da8bde0d1caa3fe257a94ebf2c8352",
+      "size": 53402
+    },
+    {
+      "path": "configs/control/sonic/source.json",
+      "sha256": "a9d41763be3231da883aeb5c84b442b618bbde3df0f6df58567d1a7b1c8dd283",
+      "size": 4820
+    },
+    {
+      "path": "licenses/GEAR-SONIC-model-LICENSE",
+      "sha256": "24ab66be50d1aca4fc5e029ef76ce4ceaac6557ea21665caf4b140695a76ffee",
+      "size": 8886
+    },
+    {
+      "path": "licenses/SONIC-source-LICENSE",
+      "sha256": "24ab66be50d1aca4fc5e029ef76ce4ceaac6557ea21665caf4b140695a76ffee",
+      "size": 8886
+    },
+    {
+      "path": "licenses/Unitree-robot-model-LICENSE",
+      "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+      "size": 1558
+    },
+    {
+      "path": "licenses/three-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "size": 1081
+    }
+  ]
+}
