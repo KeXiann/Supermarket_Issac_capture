@@ -2,6 +2,7 @@
 """Reject generated/binary/private files from the Git publication set."""
 from pathlib import Path
 import re
+import json
 import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().split('\0')
@@ -21,5 +22,14 @@ for name in filter(None, files):
     blob=path.read_bytes()
     if (b'/home/' + b'user/') in blob:errors.append(f'machine-specific home path: {name}')
     if any(pattern.search(blob) for pattern in secrets):errors.append(f'credential material: {name}')
+reference = ROOT/'assets/collection_reference_2609/reference.json'
+manifest = json.loads(reference.read_text())
+required = list(manifest['files']) + list(manifest['semanticdpc_conversion']['files_sha256'])
+required += ['dependencies/lerobot_utils.py']
+tracked = set(files)
+for name in required:
+    path = 'assets/collection_reference_2609/' + name
+    if path not in tracked:
+        errors.append(f'required compatibility source is not tracked: {path}')
 if errors:raise SystemExit('\n'.join(errors))
 print(f'Publication check OK: {len(list(filter(None,files)))} files, {total/1024/1024:.2f} MiB; no oversized files, captured data or recognized credentials.')
